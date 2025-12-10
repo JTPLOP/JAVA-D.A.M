@@ -1,0 +1,4 @@
+EXPLICACION EJERCICIO 1:
+
+Creamos las clases con los atributos propuesto por el enunciado.
+

@@ -6,3 +6,30 @@ En este caso lo que esta mostrando es el uso de las herencias, para ello nos hac
 explica que para optimizarlo utilizamos la HERENCIA. 
 
 Tras la explicacion creamos la clase Persona
+
+La palabra extends significa que extienda  a la clase madre Y ademas a sus atributos propios.
+
+Sintaxis utilizada para hacer la herencia: public class (nombre clase Hija) extends (nombre clase Madre) { }
+
+
+COMO HEMOS CREADO EL OBJETO EN MAIN (son iguales en todas las hijas)
+
+1. Creamos el contructor en la clase madre (Persona)
+
+2. Creamos en el main el objeto con los parametros necesarios: 
+Ejemplo --> "Persona p1 = new Persona ("56", 11, "Paco", 41100, 6554, 1);" 
+	--> Esto significa que los objetos de las superclases se siguen creando igual
+	
+3. Vamos a la clase de la hija (la que elijamos)
+
+4. Generamos los constructores de la subClase
+Anotacion --> Cuando creemos el constructor en la subClase tendra tanto los parametros de la clase madre como la de la clase Hija
+
+Caracteristica: los atributos de la madre se introducen en el "SUPER" 
+Ejemplo --> "super(dNI, edad, nombre, codPostal, numTelefono, id);" 
+El super es por asi decirlo la llamada a la clase Madre.
+
+Ahi es donde aparece la relevancia del "super", y por eso cuando estamos en la clase "MADRE" no es necesario agregarlo.
+
+5. Creamos el objeto de la subClase en la cual tendremos que utilizar tanto los parametros de la madre como los parametros
+de la clase Hija.

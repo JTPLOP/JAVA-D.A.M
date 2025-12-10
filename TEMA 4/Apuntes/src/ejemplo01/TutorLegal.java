@@ -1,6 +1,6 @@
 package ejemplo01;
 
-public class TutorLegal {
+public class TutorLegal extends Persona{
 
 	// Caracteristicas Tutor legal
 	
