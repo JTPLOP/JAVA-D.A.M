@@ -1,0 +1,8 @@
+EXPLICACION DE LO REALIZADO EN EL EJEMPLO:
+
+Lo primero que hemos hecho ha sido crear la clase y acto seguido denominar los atributos de cada clase, a esta accion realizada hemos jerarquizados los atributos.
+
+En este caso lo que esta mostrando es el uso de las herencias, para ello nos hace ver como hemos abusado de crear atributos como "nombre, DNI..." que hemos repetido en cada clase, y aqui es donde nos 
+explica que para optimizarlo utilizamos la HERENCIA. 
+
+Tras la explicacion creamos la clase Persona
