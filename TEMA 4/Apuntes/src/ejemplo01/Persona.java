@@ -19,9 +19,19 @@ public class Persona {
 		this.numTelefono = numTelefono;
 		this.id = id;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Persona [DNI=" + DNI + ", edad=" + edad + ", nombre=" + nombre + ", codPostal=" + codPostal
+				+ ", numTelefono=" + numTelefono + ", id=" + id + "]";
+	}
 	
 	
-	
+	//METODOS
+	public int sumarEdad (int cant) {
+		return edad+cant;
+	}
 	
 	
 	
