@@ -1,0 +1,14 @@
+ORGANIZAR EJERCICIO 2
+
+Clase documento (madre) (es la que imprime el encabezado) (pensar doc plantilla)
+clase hija (tarjeta visita y carta)
+
+Clase documento:
+metodo de imprimir cabecera
+
+clase visita: (reescribir metodo para agregar datos de contactos)
+clase carta: (reescribir metodo para agregar fecha)
+
+INCORPORACION EJERCICIO:
+
+Crear una clase Emrpesa que no tenga relacion con con la herencia de documento

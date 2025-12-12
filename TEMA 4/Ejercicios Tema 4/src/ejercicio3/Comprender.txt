@@ -1,0 +1,9 @@
+EJERCICIO 3
+
+Tenemos como clase madre Vehiculo (todos los vehiculos a motro pagan una tasa)
+
+Clase Madre --> Vehiculos
+Clase Hija --> motocicletas, coches y furgonetas.
+
+Fin del programa: calcular la cantidad a pagar segun caracteristicas
+
