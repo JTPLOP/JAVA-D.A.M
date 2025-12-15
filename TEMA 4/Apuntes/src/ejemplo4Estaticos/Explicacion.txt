@@ -1,0 +1,18 @@
+Este ejemplo tiene como objetivo explicar el uso de "Static", es del tema 3 pero se explica en el tema 4.
+
+Lo primero que hacemos en el ejemplo es escribir static en el atributo seleccionado.
+--> private static int contador;
+
+Su funcion es en cierto sentido una forma de compartir atributos entre todos los objetos de una misma clase.
+
+CURIOSIDAD --> Al crear el constructor no se agregaran los metodos estaticos.
+
+Para que se suele utilizar el estatico???
+--> Para los contadores de objetos.
+
+Ahora en el ejemplo creamos una nueva clase Gestion y le agregamos un atributo estatico llamado caja
+que nos indica el dinero facturado.
+
+Ahora en la clase Producto creamos el metodo calcularPrecio
+
+Ahora en la clase Gestion simulamos una linea de ventas mediante un metodo. 

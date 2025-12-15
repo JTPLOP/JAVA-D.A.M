@@ -1,0 +1,10 @@
+EXPLICACION CLASES ABSTRACTAS
+
+Lo primero que hacemos es crear las clases y en la clase Madre (abstracta) le creamos los atributos.
+(Para indicar que una clase es ABSTRACTA en la sintaxis de la creacion de la clase --> public abstract class Figura
+
+Es importante comprender que para que una clase sea abstracta debe tener al menos 1 metodo abstracto. 
+(Para la sintaxis del programa a este metodo no es necesario agregar -->LLAVES<--)
+
+Al tener un metodo abstracto estamos obligados a REESCRIBIR en una clase hija. Y si no queremos reescribir el metodo
+estamos obligado a hacer esa clase hija tambien de forma abstracta. 
