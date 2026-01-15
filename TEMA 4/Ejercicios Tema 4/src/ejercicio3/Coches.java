@@ -4,12 +4,16 @@ public class Coches extends Vehiculo{
 
 	private double potencia;
 
-	public Coches(boolean ceroEmi, boolean eCO, boolean tipoB, boolean tipoC, double potencia) {
-		super(ceroEmi, eCO, tipoB, tipoC);
+		
+
+		public Coches(String[] categoria, double potencia) {
+		super(categoria);
 		this.potencia = potencia;
 	}
-	
-		public double calcularPrecio (double impuesto) {
+
+
+
+		public double calcularPrecio (double [] cantidadFija, int tipoVehi) {
 		
 		int den=100;
 		double porcentaje=25;
@@ -20,7 +24,7 @@ public class Coches extends Vehiculo{
 		
 		
 		
-		return gasto+super.calcularPrecio(impuesto);
+		return gasto+super.calcularPrecio(cantidadFija, tipoVehi);
 	}
 	
 	

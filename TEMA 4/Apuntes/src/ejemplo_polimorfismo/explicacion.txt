@@ -1,0 +1,14 @@
+EXPLICACION EJEMPLO POLIMORFISMO
+
+Empezamos creando tres clases e indicando que la clase figura va a ser abstracta.
+
+En la clase bstracta vamos a crear los atributos necesarios, los constructores, el toString y varios metodos.
+como caracteristica a remarcar se crean 2 metodos abstracto y 1 metodo void que solo afecta a aquella frase.
+
+Ahora crearemos para cada clase (circulo y cuadrado) los atributos, incluiremos el extends hacia la clase madre, y crearemos los contructores.
+
+Luego incluimos los dos metodos y mediante reescritura colocamos el calculo segun la clase que nos encontremos.
+Finalmente escribamos un syso excluisvo
+
+PARTE 2 Creamos el main
+

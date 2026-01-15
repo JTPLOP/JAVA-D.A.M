@@ -2,42 +2,44 @@ package ejercicio3;
 
 public class Vehiculo {
  
-	private boolean ceroEmi;
-	private boolean eCO;
-	private boolean tipoB;
-	private boolean tipoC;
-	
-	public Vehiculo(boolean ceroEmi, boolean eCO, boolean tipoB, boolean tipoC) {
+	private String categoria []; 
+
+	public Vehiculo(String[] categoria) {
 		super();
-		this.ceroEmi = ceroEmi;
-		this.eCO = eCO;
-		this.tipoB = tipoB;
-		this.tipoC = tipoC;
+		this.categoria = categoria;
+	}
+
+	
+	public Vehiculo() {
+		super();
+	}
+	
+
+
+	public String[] getCategoria() {
+		return categoria;
 	}
 
 
-	public Vehiculo() {
-		super();
+	public void setCategoria(String[] categoria) {
+		this.categoria = categoria;
 	}
 
 
 	//METODOS
-	public double calcularPrecio (double impuesto) {
+	public double calcularPrecio (double [] cantidadFija, int tipoVehi) {
 	//VARIABLES
-	double ceroEmiTarif=0.4, eCoTarif=0.6, tipoBTarif=1.3, tipoCTarif=1.6;
-	double gasto = 0;
 		
-		if (ceroEmi) {
-			gasto=impuesto*ceroEmiTarif;
-		}else if (eCO) {
-			gasto=impuesto*eCoTarif;
-		}else if (tipoB) {
-			gasto=impuesto*tipoBTarif;
-		}else if (tipoC) {
-			gasto=impuesto*tipoCTarif;
+		return cantidadFija[tipoVehi];
+	}
+	
+	public void mostrarTipos () {
+		
+		for (int i = 0; i < categoria.length; i++) {
+			System.out.printf("\n"+(i+1)+": "+getCategoria()[i]);
 		}
 		
-		return gasto;
+		
 	}
 	
 }

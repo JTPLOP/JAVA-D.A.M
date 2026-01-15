@@ -1,0 +1,31 @@
+EXPLICACION:
+
+Cuando cremos una interfaz (otro tipo de clase) deberemos agregar lo siguiente: public interface (IDepredador) { }
+Un detalle impotante es que el nombre que se suele llevar a cabo de ser con -able (vamos a utilizar de momento I+(nombreNormal)
+
+Cuando implementamos en una interfaz deberemos agregar los metodos de forma obligatoria.
+
+EJEMPLO: Si tenemos una clase tipo gorrion que puede ser tanto depredador como presa, podremos implementar ambas interfaces. 
+
+Detalle --> Las interfaces son muy usadas a dia de hoy.
+
+- - - - - - - - - - - - - - -  - - - - - - - - -
+
+Tras crear la interfaz nos hemos dirigido a la clase rana donde vamos a introducir los metodos de interfaces.
+ACTUALMENTE --> Vamos a introducir reescritura de metodos.
+
+
+= = = = = = =
+MAIN
+= = = = = = = 
+
+Ahora nos dirigimos hacia el main.
+RECORDAD --> Las interfaces no se pueden instanciar como objetos, pero si pueden existir objetos de IDepredador.
+
+- - - - 
+Una buena estrategia es que si van a heredar muchos el rasgo podriamos introducirla en la clase madre para que las hijas
+la hereden.
+(Suposicion) --> Que ocurre si la clase madre es abstracta
+RTA --> En el caso de que ocurra se agregara en la clase madre el extends en la cabecera y luego en las clases hijas se reescribira el 
+metodo proveniente de la clase interfaz. (En el caso de que la hija sea abstracta sucedera lo mismo con las herederas).
+

@@ -4,12 +4,14 @@ public class Motocicletas extends Vehiculo{
 
 	private double cilindrada;
 
-	public Motocicletas(boolean ceroEmi, boolean eCO, boolean tipoB, boolean tipoC, double cilindrada) {
-		super(ceroEmi, eCO, tipoB, tipoC);
+	public Motocicletas(String[] categoria, double cilindrada) {
+		super(categoria);
 		this.cilindrada = cilindrada;
 	}
-	
-	public double calcularPrecio (double impuesto) {
+
+
+
+	public double calcularPrecio (double[] cantidadFija, int tipoVehi) {
 		
 		int den=100;
 		double porcentaje=60;
@@ -17,10 +19,7 @@ public class Motocicletas extends Vehiculo{
 		
 		gasto = cilindrada*porcentaje/den;
 		
-		
-		
-		
-		return gasto+super.calcularPrecio(impuesto);
+		return gasto+super.calcularPrecio(cantidadFija, tipoVehi);
 	}
 	
 }

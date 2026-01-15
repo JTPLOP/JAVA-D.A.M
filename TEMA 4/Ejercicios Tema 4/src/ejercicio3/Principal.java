@@ -8,13 +8,13 @@ public class Principal {
 		// TODO Auto-generated method stub
 
 		//VARIABLES
-		
 		int opcion, opcion2;
-		double cilindrada, potencia, cantFijaFurgo;
+		double cilindrada, potencia;
 		double impuesto;
 		
 		//VARIABLES CLASE MADRE
-		boolean ceroEmi=false, eCo=false, tipoB=false, tipoC=false;
+		String categoria [] = {"Cero Emisiones", "ECO", "TipoB", "TipoC"};
+		double precios [] = {30,20,100,150};
 
 		//LLAMADA DE OBJETOS: 
 		
@@ -22,13 +22,12 @@ public class Principal {
 		Coches c1;
 		Furgonetas f1;
 		
-		System.out.println("Bienvenid este programa te ayudara a gestionar los impuestos: ");
+		System.out.println("Bienvenido este programa te ayudara a gestionar las comisiones a los vehiculos: ");
 		
-		System.out.println("Indique el impuesto fijo: ");
-		impuesto=Leer.datoDouble();
 		
 		do {
-			
+			System.out.println("Selecciona la opcion que prefieras\n ");
+			System.out.println("[1] Motocicletas\n[2] Coches\n[3] Furgonetas\n[0] Salir");
 			opcion=Leer.datoInt();
 			
 			switch (opcion) {
@@ -37,40 +36,89 @@ public class Principal {
 					System.out.println("Estas en la seccion de las motocicletas.");
 					System.out.println("Indique las cilindradas: ");
 					cilindrada=Leer.datoDouble();
+					m1= new Motocicletas(categoria, cilindrada);
+
 					
 					System.out.println("Indique que tipo de vehiculo ha sido catalogado: ");
+					
 					do { 
-					System.out.println("1. Cero Emision\n2. Eco\n3.TipoB\n4. TipoC");
+					m1.mostrarTipos();
+					System.out.println("\nIndicar:");
 					opcion2= Leer.datoInt();
 						switch (opcion2) {
 							
-							case 1:
-								ceroEmi=true;
+							case 1,2,3,4: 
 								break;
-							case 2: 
-								eCo=true;
-							case 3:
-								tipoB=true;
-							case 4:
-								tipoC=true;
+								
 							default:
 								System.err.println("Valor incorrecto, vuelva a introducir");
-				
 						}
 			
-					}while (opcion2 != 1 || opcion2 != 2 || opcion2 != 3 ||opcion2 != 4 );
+					}while (opcion2 != 1 && opcion2 != 2 && opcion2 != 3 && opcion2 != 4 );
 					
-					m1= new Motocicletas (ceroEmi, eCo, tipoB, tipoC, cilindrada);
+					System.out.printf("\nEl precio para la motocicleta será de: %.2f€\n",m1.calcularPrecio(precios,(opcion2-1)));
 					
+					break;
 					
+				case 2: 
+					System.out.println("Estas en la seccion de las coches.");
+					System.out.println("Indique la potencia: ");
+					potencia=Leer.datoDouble();
+					c1= new Coches (categoria, potencia);
+
 					
+					System.out.println("Indique que tipo de vehiculo ha sido catalogado: ");
 					
+					do { 
+					c1.mostrarTipos();
+					System.out.println("\nIndicar:");
+					opcion2= Leer.datoInt();
+						switch (opcion2) {
+							
+							case 1,2,3,4: 
+								break;
+								
+							default:
+								System.err.println("Valor incorrecto, vuelva a introducir");
+						}
+			
+					}while (opcion2 != 1 && opcion2 != 2 && opcion2 != 3 && opcion2 != 4 );
 					
+					System.out.printf("\nEl precio para la motocicleta será de: %.2f€\n",c1.calcularPrecio(precios,(opcion2-1)));
 					
+					break;
+				case 3: 
+					System.out.println("Estas en la seccion de las furgonetas.");
+					System.out.println("Indique el impuesto: ");
+					impuesto=Leer.datoDouble();
+					f1= new Furgonetas (categoria, impuesto);
+
 					
+					System.out.println("Indique que tipo de vehiculo ha sido catalogado: ");
 					
+					do { 
+					f1.mostrarTipos();
+					System.out.println("\nIndicar:");
+					opcion2= Leer.datoInt();
+						switch (opcion2) {
+							
+							case 1,2,3,4: 
+								break;
+								
+							default:
+								System.err.println("Valor incorrecto, vuelva a introducir");
+						}
+			
+					}while (opcion2 != 1 && opcion2 != 2 && opcion2 != 3 && opcion2 != 4 );
 					
+					System.out.printf("\nEl precio para la motocicleta será de: %.2f€\n",f1.calcularPrecio(precios,(opcion2-1)));
 					
+					break;
+				case 0: 
+					System.out.println("Cerrando programa...");
+					break;
+				default: 
+					System.err.println("Valor erroneo, vuelva a intentarlo.");
 					
 					
 			 }

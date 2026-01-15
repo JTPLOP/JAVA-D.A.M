@@ -3,15 +3,16 @@ package ejercicio3;
 public class Furgonetas extends Vehiculo{
 
 	private double cantFija;
-
-	public Furgonetas(boolean ceroEmi, boolean eCO, boolean tipoB, boolean tipoC, double cantFija) {
-		super(ceroEmi, eCO, tipoB, tipoC);
+	
+		public Furgonetas(String[] categoria, double cantFija) {
+		super(categoria);
 		this.cantFija = cantFija;
 	}
-	
-		public double calcularPrecio (double impuesto) {
+
+
+		public double calcularPrecio (double [] cantidadFija, int tipoVehi) {
 		
-		return cantFija+super.calcularPrecio(impuesto);
+		return cantFija+super.calcularPrecio(cantidadFija, tipoVehi);
 	}
 	
 }
