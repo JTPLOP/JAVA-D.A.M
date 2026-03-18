@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="PRACTICAS/RETORNO"/>
+	<classpathentry kind="src" path="TEMA 2/Boletin Ejercicios/Boletin2_UD2/src"/>
+	<classpathentry kind="src" path="TEMA 2/Boletin Ejercicios/UD2EjercicosJoseTapia/src"/>
+	<classpathentry kind="src" path="TEMA 2/TeoriaPractica/EjemplosUD2/src"/>
+	<classpathentry kind="src" path="TEMA 3/Boletin Ejercicios/UD3_Boletin1JoseTapia/src"/>
+	<classpathentry kind="src" path="TEMA 3/Examen/ExamenAT3JoseTapia/src"/>
+	<classpathentry kind="src" path="TEMA 3/Examen/ExamenT3JoseTapiaB-Mal/src"/>
+	<classpathentry kind="src" path="TEMA 3/TeoriaPractica/Practica_EjemplosUD3/src"/>
+	<classpathentry kind="src" path="TEMA 4/Apuntes/src"/>
+	<classpathentry kind="src" path="TEMA 4/Ejercicios Tema 4/src"/>
+	<classpathentry kind="output" path="TEMA 2/Boletin Ejercicios/Boletin2_UD2/bin"/>
+</classpath>
